@@ -1,0 +1,3 @@
+In this code challenge we have more than one solution. **I started with** looping over the old array and push each element from the old array to a new array.  
+**The second one** was the same as the first one but without using the method push. This means taking care about the indexes of the old and new array.
+**The third one** was an advanced thinking since I used swapping the values in same array. I think this is the best solution because it is better from time and memory side.
