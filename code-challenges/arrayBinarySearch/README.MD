@@ -16,4 +16,4 @@ We will check the arr[mid] with the search value
 
 ## Solution
 <!-- Embedded whiteboard image -->
-![whiteboard image](assets/array-binary-search.jpg)
+![whiteboard image](../../assets/array-binary-search.jpg)

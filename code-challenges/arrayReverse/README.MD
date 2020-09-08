@@ -12,4 +12,4 @@ It is easy to reverse any array using the built in methods. But it is required n
 ## Solution
 <!-- Embedded whiteboard image -->
 The final solution was using swapping the values in same array.
-![whiteboard image](assets/array-reverse.jpg)
+![whiteboard image](../../assets/array-reverse.jpg)
