@@ -13,4 +13,4 @@ Divide the length of array by 2 then take the result as a position for the value
 Loop from the array.length to the position and each loop decrease the index with 1.
 Each loop, assign the value of the index to the next index in order.
 Assign the value to the index with value equal to position. 
-![whiteboard image](assets/array-shift.jpg)
+![whiteboard image](../../assets/array-shift.jpg)
