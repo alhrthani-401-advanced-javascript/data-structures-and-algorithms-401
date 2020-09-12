@@ -19,7 +19,7 @@ In each loop we will take the value of node and store it in a variable then assi
 After while loop finished, we will add -> NULL to the end of result's string.
 ## API
 <!-- Description of each method publicly available to your Linked List -->
-### .insert(value)
+### .   (value)
 #### Return Values:
 `No return value for this method`
 
@@ -36,3 +36,10 @@ After while loop finished, we will add -> NULL to the end of result's string.
 `I will return the text "Empty linked list" if the linked list is empty`
 ##### {value1} -> {value2} -> {value3} -> NULL
 `It will retuen the content of linked list in the format "{value1} -> {value2} -> {value3} -> NULL".`
+
+## Solution
+<!-- Embedded whiteboard image -->
+![whiteboard image](../assets/linked-list.jpg)
+
+
+
