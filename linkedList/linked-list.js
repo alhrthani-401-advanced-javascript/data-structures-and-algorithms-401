@@ -5,7 +5,10 @@ class LinkedList {
     this.head = null;
   }
 
-  insert(value) {
+  /**
+     * @param {number} value
+     */
+  append(value) {
     let node = new Node(value); //vlaue=value, next=null
     //handle empty Linkedlist
     if (!this.head) {
@@ -24,6 +27,11 @@ class LinkedList {
     return this;
   }
 
+  /**
+     *
+     * @param {number} value
+     *
+     */
   include(value) {
     //handle include if the Linkedlist is empty
     if (!this.head) {
@@ -42,7 +50,62 @@ class LinkedList {
       }
     }
   }
+  /**
+         *
+         * @param {number} value
+         * @param {number} newVal
+         */
+  insertAfter(value, newVal) {
+    let newNode = new Node(newVal); //vlaue=value, next=null
 
+    //handle include if the Linkedlist is empty
+    if (!this.head) {
+      return 'Empty Linked List';
+    }
+    // if we have other stuff, I need to add it at the end
+    // I have to loop through all nodes and add it to the tail
+    let currentNode = this.head;
+    while (currentNode.next) {
+      currentNode = currentNode.next;
+      if (currentNode.value === value) {
+        newNode.next = currentNode.next;
+        currentNode.next = newNode;
+      }
+      if (currentNode.next === null) {
+        return 'The value you are trying to add after it not found';
+      }
+    }
+  }
+  /**
+         *
+         * @param {number} value
+         * @param {number} newVal
+         */
+  insertBefore(value, newVal) {
+    let newNode = new Node(newVal); //vlaue=value, next=null
+
+    //handle insertBefore if the Linkedlist is empty
+    if (!this.head) {
+      return 'Empty Linked List';
+    }
+    // if we have other stuff, I need to add it at the end
+    // I have to loop through all nodes and add it to the tail
+    let currentNode = this.head;
+    while (currentNode.next) {
+      let prevNode = currentNode;
+      currentNode = currentNode.next;
+      if (currentNode.value === value) {
+        newNode.next = prevNode.next;
+        prevNode.next = newNode;
+      }
+      if (currentNode.next === null) {
+        return 'The value you are trying to add after it not found';
+      }
+    }
+  }
+  /**
+         * No parameters needed
+         */
   toString() {
     let result = '';
     if (!this.head) {
