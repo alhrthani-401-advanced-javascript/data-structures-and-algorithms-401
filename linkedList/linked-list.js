@@ -26,7 +26,7 @@ class LinkedList {
     currentNode.next = node;
     return this;
   }
-
+//test git
   /**
      *
      * @param {number} value
