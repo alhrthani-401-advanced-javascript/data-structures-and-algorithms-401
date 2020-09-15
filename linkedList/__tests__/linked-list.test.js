@@ -103,6 +103,23 @@ describe('linked list module', () => {
     let newValue = 6;
     let valueToAddBeforeIt = 5;
     expect(list.insertBefore(valueToAddBeforeIt, newValue)).toBe('Empty Linked List');
+  }),
+  it('test insertBefore() with linked list contains head only', () => {
+    let list = new LL();
+    list.append(5);
+    list.insertBefore(5,4);
+    expect(list.toString()).toBe('{4} -> {5} -> NULL');
+  }),
+  it('test insert() with empty linked list', () => {
+    let list = new LL();
+    list.insert(1);
+    expect(list.toString()).toBe('{1} -> NULL');
+  }),
+  it('test insert() with linked list contains head only', () => {
+    let list = new LL();
+    list.insert(2);
+    list.insert(1);
+    expect(list.toString()).toBe('{1} -> {2} -> NULL');
   });
 });
 

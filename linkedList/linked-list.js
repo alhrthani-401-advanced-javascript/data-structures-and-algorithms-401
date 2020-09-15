@@ -26,6 +26,26 @@ class LinkedList {
     currentNode.next = node;
     return this;
   }
+
+  insert(value) {
+    let newNode = new Node(value); //vlaue=value, next=null
+    //handle empty Linkedlist
+    if (!this.head) {
+      this.head = node;
+      return this;
+    }
+    // If we have only the head in the linked list
+    if(this.head.next===null){
+      newNode.next=null;
+      this.head.next=newNode;
+      //If we have multi nodes in the linked list
+    }else{
+    newNode.next=this.head.next;
+    this.head.next=newNode;
+  }
+    
+   }
+
 //test git
   /**
      *
@@ -90,6 +110,11 @@ class LinkedList {
     }
     // if we have other stuff, I need to add it at the end
     // I have to loop through all nodes and add it to the tail
+    if(this.head.value === value){
+      let olderHead=this.head;
+      this.head=newNode;
+      this.head.next=olderHead;
+    }
     let currentNode = this.head;
     while (currentNode.next) {
       let prevNode = currentNode;
