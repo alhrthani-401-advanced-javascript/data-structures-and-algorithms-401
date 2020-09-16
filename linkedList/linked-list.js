@@ -26,7 +26,10 @@ class LinkedList {
     currentNode.next = node;
     return this;
   }
-
+  /**
+   * 
+   * @param {any value} value 
+   */
   insert(value) {
     let newNode = new Node(value); //vlaue=value, next=null
     //handle empty Linkedlist
@@ -147,6 +150,8 @@ class LinkedList {
       return result;
     }
   }
+
+
 }
 
 module.exports = LinkedList;
