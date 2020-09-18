@@ -27,8 +27,8 @@ class LinkedList {
     return this;
   }
   /**
-   * 
-   * @param {any value} value 
+   *
+   * @param {any value} value
    */
   insert(value) {
     let newNode = new Node(value); //vlaue=value, next=null
@@ -43,13 +43,13 @@ class LinkedList {
       this.head.next=newNode;
       //If we have multi nodes in the linked list
     }else{
-    newNode.next=this.head.next;
-    this.head.next=newNode;
-  }
-    
-   }
+      newNode.next=this.head.next;
+      this.head.next=newNode;
+    }
 
-//test git
+  }
+
+  //test git
   /**
      *
      * @param {number} value

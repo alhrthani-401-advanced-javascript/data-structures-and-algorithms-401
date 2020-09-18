@@ -19,7 +19,7 @@ let $ = createSnippetWithJQuery(`
 
 const changeAllClassNames = () => {
   // Solution code here...
-  $("li").addClass("fruit");
+  $('li').addClass('fruit');
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -74,7 +74,7 @@ const alphabetizeBetter = (arr) => {
   //     return a.toLowerCase().localeCompare(b.toLowerCase());
   // });
   return arr.sort( (a, b) => { return a.toLowerCase().localeCompare(b.toLowerCase()); })
-  
+
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -150,9 +150,9 @@ const sortPeopleBetter = (arr) => {
   return arr.sort((a, b) => {
     if (a.lastName !== b.lastName){
       return a.lastName.toLowerCase().localeCompare(b.lastName.toLowerCase());
-    } else if (a.firstName === b.firstName) { 
+    } else if (a.firstName === b.firstName) {
       return a.age - b.age;
-    } else { 
+    } else {
       return a.firstName.toLowerCase().localeCompare(b.firstName.toLowerCase());
     }
   })
@@ -182,13 +182,13 @@ const meetings = [
 
 const daysList = {
   // "sunday": 0, // << if sunday is first day of week
-  "Monday": 1,
-  "Tuesday": 2,
-  "Wednesday": 3,
-  "Thursday": 4,
-  "Friday": 5,
-  "Saturday": 6,
-  "Sunday": 7
+  'Monday': 1,
+  'Tuesday': 2,
+  'Wednesday': 3,
+  'Thursday': 4,
+  'Friday': 5,
+  'Saturday': 6,
+  'Sunday': 7
 }
 
 const sortMeetingsByDay = (arr) => {
@@ -229,7 +229,7 @@ $ = createSnippetWithJQuery(`
 
 const addPearClass = () => {
   // Solution code here...
-  $("li:nth-child(3)").addClass("pear");
+  $('li:nth-child(3)').addClass('pear');
 
 };
 

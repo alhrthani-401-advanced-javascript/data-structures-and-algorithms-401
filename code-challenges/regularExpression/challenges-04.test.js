@@ -24,7 +24,7 @@ let $ = createSnippetWithJQuery(`
 
 const generateSubmitButton = () => {
   // Solution code here...
-  $("form").append("<button type='submit'>submit</button>")
+  $('form').append('<button type=\'submit\'>submit</button>')
 }
 
 /* ------------------------------------------------------------------------------------------------
@@ -249,4 +249,4 @@ xdescribe('Testing challenge 8', () => {
 
 function createSnippetWithJQuery(html){
   return cheerio.load(html);
-};
+}

@@ -45,7 +45,7 @@ const addNumbers = (num, arr, times, callback) => {
     callback(arr,num);
   }
   return arr;
-  
+
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -71,11 +71,11 @@ const createList = (availableItems) => {
   var list=[];
 
   availableItems.forEach(element => {
-      if(element.available==true){
-          list.push(element.name);
+    if(element.available==true){
+      list.push(element.name);
 
 
-      }
+    }
   });
   return list;
 
@@ -100,18 +100,18 @@ const fizzbuzz = (arr) => {
   // Solution code here...
   var result=[];
   arr.forEach(element=>{
-      if(element%3==0 && element%5==0){
-        result.push("Fizz Buzz");
-      }else if(element%3==0){
-        result.push("Fizz");
-          
+    if(element%3==0 && element%5==0){
+      result.push('Fizz Buzz');
+    }else if(element%3==0){
+      result.push('Fizz');
 
-      }
-      else if(element%5==0){
-        result.push("Buzz");
-          
+
+    }
+    else if(element%5==0){
+      result.push('Buzz');
+
     }else{
-        result.push(element);
+      result.push(element);
     }
 
   })

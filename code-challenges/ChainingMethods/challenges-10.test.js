@@ -10,19 +10,19 @@ Build a simple express server. Connect a '/hello' route that sends a greeting of
 
 const createServer = () => {
   // Solution code here...
-  const express = require("express");
+  const express = require('express');
   const app = express();
 
-  app.get("/hello", (req, res) => {
-    res.status(200).send({ msg: "Hello World" });
+  app.get('/hello', (req, res) => {
+    res.status(200).send({ msg: 'Hello World' });
   });
 
-  app.get("/aboutme", (req, res) => {
-    res.status(200).send({ msg: "aboutme" });
+  app.get('/aboutme', (req, res) => {
+    res.status(200).send({ msg: 'aboutme' });
   });
 
-  app.get("/favoritefoods", (req, res) => {
-    res.status(200).send({ msg: "favoritefoods" });
+  app.get('/favoritefoods', (req, res) => {
+    res.status(200).send({ msg: 'favoritefoods' });
   });
 
   var server = app.listen(3301, function () {
@@ -35,7 +35,7 @@ const createServer = () => {
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 2
 
-Write a function named count that, given an integer and an array of arrays, uses either filter, map, or reduce 
+Write a function named count that, given an integer and an array of arrays, uses either filter, map, or reduce
 to count the amount of times the integer is present in the array of arrays.
 
 Note: You might need to use the same method more than once.
@@ -62,7 +62,7 @@ CHALLENGE 3
 Write a function that, given an array of integer arrays as input, calculates the total sum of all the elements
  in the array.
 
-You may want to use filter, map, or reduce for this problem, but are not required to. You may need to use the 
+You may want to use filter, map, or reduce for this problem, but are not required to. You may need to use the
 same method more than once.
 
 For example, [[1, 2, 3, 4, 5], [6, 7, 2, 4, 5, 7], [9, 2, 3, 6,]] returns 66.
@@ -93,7 +93,7 @@ For example, [ [0,2,5,4], [2,4,10], [] ] should return [ [1, 32], [1024], [] ].
 const divisibleByFiveTwoToThePower = (input) => {
   return input.reduce((numbersCount, currentNumber) => {
     console.log('currentNumber: ', currentNumber);
-    currentNumber = currentNumber.filter((number)=>{return typeof number != 'string'}).filter((number)=>{return number % 5 == 0;}).map(e => Math.pow(2, e));
+    currentNumber = currentNumber.filter((number)=>{return typeof number !== 'string'}).filter((number)=>{return number % 5 == 0;}).map(e => Math.pow(2, e));
     console.log('currentNumberAfterReomveStrings: ', currentNumber);
     numbersCount.push(currentNumber);
     return numbersCount;
