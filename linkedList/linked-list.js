@@ -39,9 +39,15 @@ class LinkedList {
 
 
   /**
+<<<<<<< HEAD
      *
      * @param {The value to add to linked list} value
      */
+=======
+   *
+   * @param {any value} value
+   */
+>>>>>>> 4d139afce10e3f46aa6f3e1d473e051cd9257804
   insert(value) {
     if (!value) {
       throw new Error('Invalid Value');
@@ -53,12 +59,28 @@ class LinkedList {
       this.size++;
       return this;
     }
+<<<<<<< HEAD
     newNode.next = this.head;
     this.head = newNode;
     this.size++;
     return this;
   }
 
+=======
+    // If we have only the head in the linked list
+    if(this.head.next===null){
+      newNode.next=null;
+      this.head.next=newNode;
+      //If we have multi nodes in the linked list
+    }else{
+      newNode.next=this.head.next;
+      this.head.next=newNode;
+    }
+
+  }
+
+  //test git
+>>>>>>> 4d139afce10e3f46aa6f3e1d473e051cd9257804
   /**
      *
      * @param {number} value
