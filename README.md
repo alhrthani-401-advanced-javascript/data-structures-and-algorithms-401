@@ -11,6 +11,9 @@ Content
 6   | *__LinkedList ll-kth-from-end__* | [Implementaion of ll-kth-from-end on Linked List](https://github.com/AhmadHirthani/data-structures-and-algorithms/blob/master/linkedList/linked-list.js)
 7   | *__Merge two linked lists__* | [Implementaion Merging two Linked List](https://github.com/AhmadHirthani/data-structures-and-algorithms/blob/master/linkedList/ll-zip.js)
 
+8   | *__Stack__* | [Stack Implementaion](https://github.com/AhmadHirthani/data-structures-and-algorithms/blob/master/stacksAndQueues/stack.js)
+9   | *__Queue__* | [Queue Implementaion](https://github.com/AhmadHirthani/data-structures-and-algorithms/blob/master/stacksAndQueues/queue.js)
+
 
 
 
