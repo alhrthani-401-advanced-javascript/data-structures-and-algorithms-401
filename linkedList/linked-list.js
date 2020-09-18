@@ -3,18 +3,26 @@ const Node = require('./node.js');
 class LinkedList {
   constructor() {
     this.head = null;
+    this.size = 0;
+
   }
+
 
   /**
      * @param {number} value
      */
   append(value) {
+    if (!value) {
+      throw new Error('Invalid Value');
+    }
     let node = new Node(value); //vlaue=value, next=null
     //handle empty Linkedlist
     if (!this.head) {
       this.head = node;
+      this.size++;
       return this;
     }
+
     // if we have other stuff, I need to add it at the end
     // I have to loop through all nodes and add it to the tail
     let currentNode = this.head;
@@ -24,32 +32,33 @@ class LinkedList {
     //last node we reach
     //we will put it's next equal to the new node
     currentNode.next = node;
+    this.size++;
     return this;
   }
+
+
+
   /**
-   * 
-   * @param {any value} value 
-   */
+     *
+     * @param {The value to add to linked list} value
+     */
   insert(value) {
+    if (!value) {
+      throw new Error('Invalid Value');
+    }
     let newNode = new Node(value); //vlaue=value, next=null
     //handle empty Linkedlist
     if (!this.head) {
-      this.head = node;
+      this.head = newNode;
+      this.size++;
       return this;
     }
-    // If we have only the head in the linked list
-    if(this.head.next===null){
-      newNode.next=null;
-      this.head.next=newNode;
-      //If we have multi nodes in the linked list
-    }else{
-    newNode.next=this.head.next;
-    this.head.next=newNode;
+    newNode.next = this.head;
+    this.head = newNode;
+    this.size++;
+    return this;
   }
-    
-   }
 
-//test git
   /**
      *
      * @param {number} value
@@ -93,6 +102,9 @@ class LinkedList {
       if (currentNode.value === value) {
         newNode.next = currentNode.next;
         currentNode.next = newNode;
+        this.size++;
+        return this;
+
       }
       if (currentNode.next === null) {
         return 'The value you are trying to add after it not found';
@@ -113,10 +125,10 @@ class LinkedList {
     }
     // if we have other stuff, I need to add it at the end
     // I have to loop through all nodes and add it to the tail
-    if(this.head.value === value){
-      let olderHead=this.head;
-      this.head=newNode;
-      this.head.next=olderHead;
+    if (this.head.value === value) {
+      let olderHead = this.head;
+      this.head = newNode;
+      this.head.next = olderHead;
     }
     let currentNode = this.head;
     while (currentNode.next) {
@@ -125,6 +137,9 @@ class LinkedList {
       if (currentNode.value === value) {
         newNode.next = prevNode.next;
         prevNode.next = newNode;
+        this.size++;
+        return this;
+
       }
       if (currentNode.next === null) {
         return 'The value you are trying to add after it not found';
@@ -151,6 +166,19 @@ class LinkedList {
     }
   }
 
+  kthFromEnd(k) {
+    if (this.size < k || k < 0) {
+      throw new Error('Not in the list!');
+    }
+    let current = this.head;
+    let counter = this.size - k - 1;
+    while (counter > 0) {
+      console.log('counter >>>', counter);
+      current = current.next;
+      counter--;
+    }
+    return current.value;
+  }
 
 }
 

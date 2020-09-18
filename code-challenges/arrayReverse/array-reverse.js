@@ -23,7 +23,7 @@
 //   let newArrayIndex=0;
 // for(var i=oldArray.length-1;i>=0;i--){
 //     newArray[newArrayIndex]=oldArray[i];
-//         newArrayIndex++; 
+//         newArrayIndex++;
 // }
 // return newArray;
 // }
@@ -40,7 +40,7 @@ let inverseArray=function(arr){
     let temp=arr[i];
     arr[i]=arr[j];
     arr[j]=temp;
-    j--; 
+    j--;
   }
   return arr;
 }

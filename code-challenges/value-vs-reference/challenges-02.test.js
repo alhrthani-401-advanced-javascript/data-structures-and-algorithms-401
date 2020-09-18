@@ -2,7 +2,7 @@
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 1 - Review
-Write a function named raisedToTheThird that takes in an array of numbers and returns a new array of each of those numbers raised to 
+Write a function named raisedToTheThird that takes in an array of numbers and returns a new array of each of those numbers raised to
 the 3rd power (hint: look up Math.pow()). Use forEach to solve this problem.
 ------------------------------------------------------------------------------------------------ */
 
@@ -49,8 +49,8 @@ console.log(a) prints { fullName: 'Octavia Estelle Butler', yearBorn: 1947 }
 ------------------------------------------------------------------------------------------------ */
 
 const addBirthYearProperty = (obj, year) => {
-    // Solution code here...
-  obj["yearBorn"] = year;
+  // Solution code here...
+  obj['yearBorn'] = year;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -80,7 +80,7 @@ console.log(a) prints [1, 2, 3, 4]
 ------------------------------------------------------------------------------------------------ */
 
 const append = (arr1, arr2) => {
-    // arr1.concat(arr2);
+  // arr1.concat(arr2);
   arr2.forEach((item) => arr1.push(item));
 };
 

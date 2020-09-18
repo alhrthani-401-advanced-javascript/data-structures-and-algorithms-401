@@ -48,13 +48,40 @@ After while loop finished, we will add -> NULL to the end of result's string.
 `No return value for this method`
 
 ##### Empty linked list
-`I will return the text "Empty linked list" if the linked list is empty`
+`It will return the text "Empty linked list" if the linked list is empty`
 ##### {value1} -> {value2} -> {value3} -> NULL
 `It will retuen the content of linked list in the format "{value1} -> {value2} -> {value3} -> NULL".`
 
+
+### kthFromEnd(index)
+`This method will return the value stored in the index starting from the end `
+#### Return Values:
+`The value stord in the index`
+
+##### Index larger than linked list capacity
+`It will return the text "Not in the list!"`
+##### kthFromEnd(2)
+`If the linked list was {1} -> {2} -> {3} -> {4} -> {5} -> NULL, then it will return 4.`
+
 ## Solution
 <!-- Embedded whiteboard image -->
+### insertion whiteboard
 ![whiteboard image](../assets/ll-insertions.jpg)
+
+### kthFromEnd whiteboard
+![whiteboard image](../assets/ll-kth-from-end.jpg)
+
+### zipLists function
+#### input
+Two linked lists
+
+#### Return Values:
+One linked list resulting from merging process
+
+## Solution
+<!-- Embedded whiteboard image -->
+![whiteboard image](../assets/ll-zip.jpg)
+
 
 
 

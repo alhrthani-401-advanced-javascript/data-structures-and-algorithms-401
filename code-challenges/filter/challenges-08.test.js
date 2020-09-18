@@ -22,8 +22,8 @@ const createServer = () => {
 
 
 function sayHello(request, response){
-  if (request.url === "/hello"){
-    response.status(200).send("Hello from the back-end");
+  if (request.url === '/hello'){
+    response.status(200).send('Hello from the back-end');
   }
 }
 
