@@ -13,7 +13,7 @@ Content
 
 8   | *__Stack__* | [Stack Implementaion](https://github.com/AhmadHirthani/data-structures-and-algorithms/blob/master/stacksAndQueues/stack.js)
 9   | *__Queue__* | [Queue Implementaion](https://github.com/AhmadHirthani/data-structures-and-algorithms/blob/master/stacksAndQueues/queue.js)
-
+10   | *__Queue with Stacks__* | [Queue Implementaion with Stacks](https://github.com/AhmadHirthani/data-structures-and-algorithms/blob/master/queueWithStacks/queue-with-stacks.js)
 
 
 
