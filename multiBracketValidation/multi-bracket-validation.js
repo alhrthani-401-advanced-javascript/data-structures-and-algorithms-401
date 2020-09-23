@@ -2,6 +2,7 @@
 const Stack = require('../stacksAndQueues/stack.js');
 
 function multiBracketValidation(input) {
+  let closeWithoutOpen = false;
   let stack = new Stack();
   let strinArray = Array.from(input);
   strinArray.forEach((char) => {
@@ -11,10 +12,12 @@ function multiBracketValidation(input) {
     if (char === ']' || char === ')' || char === '}') {
       if (char === closingTag(stack.peek())) {
         stack.pop();
+      } else {
+        closeWithoutOpen = true;
       }
     }
   })
-  if (stack.size === 0) {
+  if (stack.size === 0 && !closeWithoutOpen) {
     return true;
   } else {
     return false;
