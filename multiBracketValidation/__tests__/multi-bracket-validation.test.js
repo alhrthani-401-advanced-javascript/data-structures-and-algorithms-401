@@ -15,8 +15,12 @@ describe('Multi Brackets Validation Module', () => {
     let string1 = '[hello[';
     let string2 = '{}(]{}';
     let string3 = '{';
+    let string4 = ']';
+    let string5 = '{([])}]';
     expect(multiBracketValidation(string1)).toBeFalsy();
     expect(multiBracketValidation(string2)).toBeFalsy();
     expect(multiBracketValidation(string3)).toBeFalsy();
+    expect(multiBracketValidation(string4)).toBeFalsy();
+    expect(multiBracketValidation(string5)).toBeFalsy();
   });
 })
