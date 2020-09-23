@@ -5,8 +5,6 @@ class PseudoQueue {
   constructor() {
     this.stack1 = new Stack();
     this.stack2 = new Stack();
-
-
   }
 
   enqueue(value) {
@@ -18,7 +16,6 @@ class PseudoQueue {
       }
       return this.stack1.push(value);
     }
-
   }
 
   dequeue() {
@@ -26,18 +23,15 @@ class PseudoQueue {
       while (this.stack1.size > 0) {
         let popedFromStack1 = this.stack1.pop();
         this.stack2.push(popedFromStack1);
-
       }
       let dequeuedFromStack2 = this.stack2.pop();
       if (dequeuedFromStack2 === 'Can not pop from empty stack') {
         return 'Can not Dequeue from empty Queue';
       }
       return dequeuedFromStack2;
-
     } else if (this.stack2.size > 0) {
       let dequeuedFromStack2 = this.stack2.pop();
       return dequeuedFromStack2;
-
     }
   }
 }
