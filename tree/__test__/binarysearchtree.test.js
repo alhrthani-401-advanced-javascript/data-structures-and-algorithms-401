@@ -30,15 +30,16 @@ describe('Binary Search Tree', () => {
 
   });
 
-
-
   it('insert() 1', () => {
     // let one = new Node(1);
     tree.insert(1);
+    // tree.insert(10);
+
     let expected = [1, 2, 3, 4, 5, 6, 7];
     let inOrderOutput = tree.inOrder();
     expect(inOrderOutput).toEqual(expected);
   });
+
   it('contians() must return false', () => {
     expect(tree.contains(10)).toBeFalse;
 
@@ -46,4 +47,10 @@ describe('Binary Search Tree', () => {
   it('contians() must return true', () => {
     expect(tree.contains(5)).toBeTruthly;
   });
+
+  it('Test getMax()', () => {
+    expect(tree.getMax()).toEqual(7);
+  });
+
+
 });

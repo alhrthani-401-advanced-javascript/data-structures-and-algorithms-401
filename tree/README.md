@@ -14,6 +14,7 @@ Define a method named **contains** that accepts a value, and returns a boolean i
 <!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
 ### Tree whiteboard
 ![Tree whiteboard](../assets/tree.jpg)
+![getMax whiteboard](../assets/getmaxintree.jpg)
 
 ## API
 <!-- Description of each method publicly available to your Stack and Queue-->
@@ -35,4 +36,8 @@ No return Value
 
 ### .contains()
 #### return value
-ThReturn true if the tree contains the value and false if not.
+Return true if the tree contains the value and false if not.
+
+### .getMax()
+#### return value
+Return the maximum number in the tree.
