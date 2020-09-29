@@ -14,7 +14,7 @@ class BinaryTree {
   preOrder() {
     let output = [];
     let _traverse = (node) => {
-      console.log('node.value>>>', node.value);
+      // console.log('node.value>>>', node.value);
       output.push(node.value);
       // Go Left
       if (node.left) _traverse(node.left);
@@ -71,25 +71,25 @@ class BinaryTree {
 
     let _insert = (node) => {
       if (node.value > newValue && !(node.left)) {
-        console.log('node.value>>', node.value);
-        console.log({ newValue });
-        console.log('go left, no node in left, insert new value in left');
+        // console.log('node.value>>', node.value);
+        // console.log({ newValue });
+        // console.log('go left, no node in left, insert new value in left');
         node.left = newNode;
 
       } else if (node.value > newValue) {
-        console.log('node.value>>', node.value);
-        console.log({ newValue });
-        console.log('go left, left is not empty, do recursive');
+        // console.log('node.value>>', node.value);
+        // console.log({ newValue });
+        // console.log('go left, left is not empty, do recursive');
         _insert(node.left);
       } else if (node.value < newValue && !(node.right)) {
-        console.log('node.value>>', node.value);
-        console.log({ newValue });
-        console.log('go right, no node in right, insert new value in right');
+        // console.log('node.value>>', node.value);
+        // console.log({ newValue });
+        // console.log('go right, no node in right, insert new value in right');
         node.right = node;
       } else if (node.value < newValue) {
-        console.log('node.value>>', node.value);
-        console.log({ newValue });
-        console.log('go right, right is not empty, do recursive');
+        // console.log('node.value>>', node.value);
+        // console.log({ newValue });
+        // console.log('go right, right is not empty, do recursive');
         _insert(node.right);
       }
     }
