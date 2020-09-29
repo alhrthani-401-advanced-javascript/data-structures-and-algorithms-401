@@ -35,7 +35,7 @@ describe('Binary Tree', () => {
   it('preOrder()', () => {
     let expected = [1, 2, 6, 7, 8, 9, 3, 4, 5];
     let preOrderOutput = tree.preOrder();
-    console.log('preOrderOutput >> ', preOrderOutput)
+    // console.log('preOrderOutput >> ', preOrderOutput)
     expect(preOrderOutput).toEqual(expected);
   });
 
