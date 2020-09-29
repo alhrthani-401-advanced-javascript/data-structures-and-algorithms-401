@@ -38,77 +38,7 @@ class Tree {
     return treeValues;
   }
 
-  traverseDFS(type) {
-    //if there is no root, return false
-    if (!this.root) {
-      return false;
-    }
-    //make a variable for tree values
-    const treeValues = [];
-    //current values always starts at root
-    let current = this.root;
 
-    //helper methods for order choice
-    const preOrderHelper = node => {
-      //push value onto array FIRST
-      treeValues.push(node.value);
-      //recursively call function on all node children
-      if (node.children.length !== 0) {
-        node.children.forEach(child => {
-          preOrderHelper(child);
-        });
-      }
-      return true;
-    };
-
-    const postOrderHelper = node => {
-      //recursively call function on all node children FIRST
-      if (node.children.length !== 0) {
-        node.children.forEach(child => {
-          postOrderHelper(child);
-        });
-      }
-      //push value onto array
-      treeValues.push(node.value);
-      return true;
-    };
-
-    const inOrderHelper = node => {
-      //if node had children, split nodes into left and right halves in case tree is not binary FIRST
-      if (node.children.length !== 0) {
-        //get halfway point
-        const halfway = Math.floor(node.children.length / 2);
-        //recursively call function on all node children left of halfway point
-        for (let i = 0; i < halfway; i++) {
-          inOrderHelper(node.children[i]);
-        }
-        // push parent node value to array
-        treeValues.push(node.value);
-        //recursively call function on all node children right of halfway point
-        for (let i = halfway; i < node.children.length; i++) {
-          inOrderHelper(node.children[i]);
-        }
-        // else push value into array
-      } else {
-        treeValues.push(node.value);
-      }
-      return true;
-    };
-    //switch statment to select proper order and start recursive function calls
-    switch (type) {
-    case 'pre':
-      preOrderHelper(current);
-      break;
-    case 'post':
-      postOrderHelper(current);
-      break;
-    case 'in':
-      inOrderHelper(current);
-      break;
-    }
-    //return array
-    return treeValues;
-  }
 }
 
 class QueueNode {
