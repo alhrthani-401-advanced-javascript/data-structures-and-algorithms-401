@@ -27,10 +27,14 @@ class Tree {
       const nodeChildren = queue.first.value.children;
       //if node has children, loop and add each to queue
       if (nodeChildren.length !== 0) {
-        nodeChildren.forEach(child => queue.enqueue(child));
+        nodeChildren.forEach(child => {
+          // console.log('child>>>', child);
+
+          queue.enqueue(child)
+        });
       }
       //push the first item in the queue to the tree values
-      treeValues.push(queue.first.value);
+      treeValues.push(queue.first.value.value);
       //remove first node from queue
       queue.dequeue();
     }
