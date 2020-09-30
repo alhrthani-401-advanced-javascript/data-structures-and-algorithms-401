@@ -25,7 +25,7 @@ class KAryTree {
 
     let text = '';
 
-    while (queue.queue.length !== 0) {
+    while (queue.size !== 0) {
       let currentNode = queue.dequeue();
       currentNode.children.map(child => queue.enqueue(child));
       text = text + currentNode.value + ' ';
@@ -47,7 +47,7 @@ class KAryTree {
 
     let text = '';
 
-    while (stack.stack.length !== 0) {
+    while (stack.size !== 0) {
       let currentNode = stack.pop();
       currentNode.children.map(child => stack.push(child));
       text = text + currentNode.value + ' ';
