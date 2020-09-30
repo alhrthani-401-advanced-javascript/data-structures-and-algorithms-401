@@ -23,20 +23,9 @@ describe('FizzBuzzTree Module', () => {
     testTree.root.children[2].children.push(new KAryNode(13));
 
 
-    let expexted = [];
-    //expected
-    //  KAryNode {
-    //     value: '1',
-    //     pareent: null,
-    //     children: [
-    //       KAryNode { value: '2', pareent: null, children: [] },
-    //       KAryNode { value: 'Fizz', pareent: null, children: [Array] },
-    //       KAryNode { value: '4', pareent: null, children: [Array] }
-    //     ]
-    //   }
-
-    let newTree = fizzBuzzTree(testTree.root);
-    expect(newTree).toEqual(expexted);
+    let newTree = fizzBuzzTree(testTree);
+    let depthFirsttraverse = newTree.depthFirstTraversal();
+    expect(depthFirsttraverse).toEqual('1 4 13 Fizz 11 Fizz Buzz Fizz 8 2 7 Fizz Buzz');
 
   })
 

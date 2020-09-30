@@ -21,31 +21,37 @@ testTree.root.children[2].children.push(new KAryNode(12));
 testTree.root.children[2].children.push(new KAryNode(13));
 // testTree.root.children[2].children[0].children.push(new KAryNode(25));
 
-const fizzBuzzTree = (root) => {
-  // console.log(root.value);
-  root.value = checkFizzBuzz(root.value);
-  // console.log('String root value>>>', root.value);
+const fizzBuzzTree = (tree) => {
 
-  recursive(root);
+  return new KAryTree(fizzBuzzRoot(tree.root));
 
-  // currentNode.value = checkFizzBuzz(currentNode.value);
+  function fizzBuzzRoot(root) {
+    // console.log(root.value);
+    root.value = checkFizzBuzz(root.value);
+    // console.log('String root value>>>', root.value);
 
-  function recursive(root) {
-    if (root.children) {
-      for (let i = 0; i < root.children.length; i++) {
-        // console.log('root.children[i].value>>>', root.children[i].value);
-        // let newValue = checkFizzBuzz(root.children[i].value);
-        // console.log({ newValue });
-        // root.children.push(new KAryNode(newValue));
-        // console.log(typeof root.children[i]);
-        root.children[i].value = checkFizzBuzz(root.children[i].value);
-        console.log(root.children[i].value);
+    recursive(root);
 
-        recursive(root.children[i])
+    // currentNode.value = checkFizzBuzz(currentNode.value);
+
+    function recursive(root) {
+      if (root.children) {
+        for (let i = 0; i < root.children.length; i++) {
+          // console.log('root.children[i].value>>>', root.children[i].value);
+          // let newValue = checkFizzBuzz(root.children[i].value);
+          // console.log({ newValue });
+          // root.children.push(new KAryNode(newValue));
+          // console.log(typeof root.children[i]);
+          root.children[i].value = checkFizzBuzz(root.children[i].value);
+          // console.log(root.children[i].value);
+
+          recursive(root.children[i])
+        }
       }
     }
+    return root;
   }
-  return root;
+
 };
 
 function checkFizzBuzz(value) {
@@ -60,8 +66,4 @@ function checkFizzBuzz(value) {
   }
 }
 
-
-
-let newTree = fizzBuzzTree(testTree.root);
-console.log(newTree);
 module.exports = fizzBuzzTree;
