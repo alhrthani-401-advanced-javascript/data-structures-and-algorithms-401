@@ -20,5 +20,7 @@ Content
 16   | *__find-maximum-value-in-tree__* | [Implementaion of find-maximum-value in tree](https://github.com/AhmadHirthani/data-structures-and-algorithms/blob/master/tree/tree.js)
 17   | *__Do Breadth First Traverse__* | [Implementaion of Breadth First Traverse](https://github.com/AhmadHirthani/data-structures-and-algorithms/blob/master/tree/BFS.js)
 18   | *__Fizz Buzz k-ary tree__* | [Implementaion of Fizz Buzz k-ary tree](https://github.com/AhmadHirthani/data-structures-and-algorithms/blob/master/fizzBuzzTree/fizz-buzz-tree.js)
+19   | *__InsertionSort__* | [Implementaion of insertion sort](https://github.com/AhmadHirthani/data-structures-and-algorithms/blob/master/insertionSort/insertionSort.js)
+
 
 
