@@ -22,6 +22,8 @@ Content
 18   | *__Fizz Buzz k-ary tree__* | [Implementaion of Fizz Buzz k-ary tree](https://github.com/AhmadHirthani/data-structures-and-algorithms/blob/master/fizzBuzzTree/fizz-buzz-tree.js)
 19   | *__InsertionSort__* | [Implementaion of insertion sort](https://github.com/AhmadHirthani/data-structures-and-algorithms/blob/master/insertionSort/insertionSort.js)
 20   | *__MergeSort__* | [Implementaion of merge sort](https://github.com/AhmadHirthani/data-structures-and-algorithms/blob/master/mergeSort/mergeSort.js)
+21   | *__HashTable__* | [Implementaion of Hash Table](https://github.com/AhmadHirthani/data-structures-and-algorithms/blob/master/hashtable/hashtable.js)
+
 
 
 
