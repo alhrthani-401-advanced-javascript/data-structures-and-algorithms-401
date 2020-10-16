@@ -1,7 +1,6 @@
 'use strict';
 
 const insertionSort = require('../insertionSort.js');
-
 describe('insertion sort module', () => {
   it('Test normal array', () => {
     let arr = [7, 8, 5, 2, 4, 6, 3];
@@ -18,11 +17,5 @@ describe('insertion sort module', () => {
     let fewUniques = [5, 12, 7, 5, 5, 7];
     let fewUniquesExpected = [5, 5, 5, 7, 7, 12];
     expect(insertionSort(fewUniques)).toEqual(fewUniquesExpected);
-  })
-
-
-
-    [5, 12, 7, 5, 5, 7]
-
 
 })
