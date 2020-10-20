@@ -24,7 +24,7 @@ Content
 20   | *__MergeSort__* | [Implementaion of merge sort](https://github.com/AhmadHirthani/data-structures-and-algorithms/blob/master/mergeSort/mergeSort.js)
 21   | *__HashTable__* | [Implementaion of Hash Table](https://github.com/AhmadHirthani/data-structures-and-algorithms/blob/master/hashtable/hashtable.js)
 22   | *__Repeated Words__* | [Implementaion of first Repeated Words](https://github.com/AhmadHirthani/data-structures-and-algorithms/blob/master/repeatedWord/repeatedWord.js)
-
+23   | *__treeIntersection__* | [Implementaion of treeIntersection](https://github.com/AhmadHirthani/data-structures-and-algorithms/blob/master/treeIntersection/tree-intersection.js)
 
 
 
